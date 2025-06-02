@@ -1,0 +1,4 @@
+Options -MultiViews
+RewriteEngine on
+
+RedirectMatch 302 ^/psmp-ontology/(home|git|repo)/?$ https://github.com/baha-aktas/psmp-ontology/
