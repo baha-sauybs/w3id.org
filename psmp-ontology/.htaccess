@@ -1,4 +1,5 @@
-Options -MultiViews
-RewriteEngine on
+# Redirect all requests to the GitHub repository as the source
+RewriteEngine On
 
-RedirectMatch 302 ^/psmp-ontology/(home|git|repo)/?$ https://github.com/baha-aktas/psmp-ontology/
+# Redirect everything to the GitHub repository main page
+RewriteRule ^(.*)$ https://github.com/baha-aktas/psmp-ontology [L,R=301]
